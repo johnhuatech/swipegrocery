@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwipeGrocery - Find Your Grocery Coupons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🛒 SwipeGrocery</h1>
+        <p>Swipe right to save coupons!</p>
+    </div>
+
+    <div class="stats">
+        <h3>Your Savings</h3>
+        <div class="stat-item">
+            <span class="stat-label">Saved:</span>
+            <span class="stat-value" id="saved-count">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Total Value:</span>
+            <span class="stat-value" id="total-value">$0</span>
+        </div>
+    </div>
+
+    <div class="swipe-container" id="swipe-container">
+        <!-- Cards will be inserted here -->
+    </div>
+
+    <div class="swipe-hint">
+        <div class="hint-item">
+            <div class="hint-icon dislike">✕</div>
+            <span>Skip</span>
+        </div>
+        <div class="hint-item">
+            <div class="hint-icon like">♥</div>
+            <span>Save</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
